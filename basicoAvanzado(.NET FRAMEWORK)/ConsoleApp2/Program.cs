@@ -1,10 +1,13 @@
 ﻿//IMPORTACIONES, Clases predefinidas y clases creadas por nosotros
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Math; //importamos todos los metodos estaticos de la clase Math
 
 namespace ConsoleApp1
 {
@@ -13,6 +16,7 @@ namespace ConsoleApp1
         //METODOS main
         static void Main(string[] args)
         {
+
             //SWITCH
             //Todo lo que puedo hacer con los switch lo puiedo hacer con los if
             //No todo lo que puedo hacer con los if lo puedo hacer con los switch
@@ -163,9 +167,141 @@ namespace ConsoleApp1
             //    Console.Read();
             //}
 
-        }
+            /*EXCEPCIONES
+           Son un error en tiempo de ejecucion del programa que escapa al control del programador , pueden ser infinitos
+            Consiste en que cuando se genera una excepcion la capture o se trate o que se le diga al
+            programa que hacer en el caso que se produzca esa excepcion o error 
+
+           lo haremos con bloque try catch
+
+           evitamos que el programa caiga para que el resto de nuestro programa no deje de ejecutarse
+
+           try -> intenta
+           catch -> captura 
+
+           intenta ejecutarme esta linea y en caso de que tengas un error capturalo y haz esto*/
+
+            //try //intenta hacer esto
+            //{
+            //    //linea codigo
+            //}
+            //catch (Exception)  //captura excepcion
+            //{
+            //    //haz lo si siguiente en caso de que encuentres error
+            //    throw;
+            //}
+
+            ////FORZAR EXCEPCIONES
+            //Console.WriteLine("Introduce numero del mes");
+
+            //int n = int.Parse(Console.ReadLine());
+
+            //try
+            //{
+            //    Console.WriteLine(NombreDelMes(n));
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine("Mensaje de la excepcion "+e.Message);
+            //}
+
+            //Console.WriteLine("Aqui continuaria la ejecucion del resto del programa");
+            //Console.Read();
+
+            //StreamReader archivo = null;
+
+            //try
+            //{
+            //    string linea;
+            //    int contador = 0;
+            //    string path = @"C:\Users\ander\source\repos\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\ConsoleApp2\ArchivoTexto\Lecdtura.txt";
+
+            //    //StreamReader - abre un canal de comunicacion para leer el archivo de lectura, sin embargo
+            //    //esta pracatica nos consume recursos y es necesario cerrarla el canal de comunicacion para ahorrar recursos
+            //    // de nuestro programa
+            //    archivo = new StreamReader(path);
+            //    Console.WriteLine("Conexion con el archivo abierta");
+
+            //    while ((linea = archivo.ReadLine()) != null) //mientras haya lineas de texto
+            //    {
+            //        Console.WriteLine(linea);
+            //        contador++;
+            //    }
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine("Error con la lectura del archivo");
+            //}
+            //finally
+            //{
+            //    if (archivo!=null)
+            //    {
+            //        archivo.Close();
+            //    }
+            //    Console.WriteLine("Conexion con el fichero cerrada");
+            //    Console.Read();
+            //}
+
+
+            //IMPORTACION METODOS ESTATICOS
+            //double raiz = Sqrt(9);
+            //double potencia = Pow(3,4);
+            //Console.WriteLine(raiz);
+            //Console.WriteLine(potencia);
+            //Console.Read();
+
+            //CLASES ANONIMAS
+
+            //var miVariable = new { Nombre = "Alejandra", Edad = 20 };
+            //var miOtraVariable = new { Nombre = "Anderson", Edad = "23" };
+            //var estaOtraVariable = new { Nombre = "Carlos", Edad = 15, Peso = 56.2 };
+
+            //miVariable = miOtraVariable;
+            //miOtraVariable = estaOtraVariable;
+
+            //Console.WriteLine(miVariable.Nombre + " tiene " + miVariable.Edad + " Años");
+            //Console.WriteLine(miOtraVariable.Nombre + " tiene " + miOtraVariable.Edad + " Años");
+            //Console.Read();
+
+        } // end Main()
 
         //METODOS
+
+        public static string NombreDelMes(int mes)
+        {
+            switch (mes)
+            {
+                case 1:
+                    return "Enero";
+                case 2:
+                    return "Febrero";
+                case 3:
+                    return "Marzo";
+                case 4:
+                    return "Abril";
+                case 5:
+                    return "Mayo";
+                case 6:
+                    return "Junio";
+                case 7:
+                    return "Julio";
+                case 8:
+                    return "Agosto";
+                case 9:
+                    return "Septiembre";
+                case 10:
+                    return "Octubre";
+                case 11:
+                    return "Noviembre";
+                case 12:
+                    return "Diciembre";
+                default:
+                    throw new ArgumentOutOfRangeException();
+                    //ArgumentOutOfRangeException -> rango superado, argumento de valores fuera del intervalo de valores valido
+                    //return "No existe el mes para el parametro que digito";
+            }
+        }
+
         static void MensajePantalla()
         {
             Console.WriteLine("_______________METODOS_____________");
