@@ -13,7 +13,7 @@ namespace ConsoleApp1
 {
     class Program
     {
-        //METODOS main
+        //MAIN
         static void Main(string[] args)
         {
 
@@ -263,106 +263,146 @@ namespace ConsoleApp1
             //Console.WriteLine(miOtraVariable.Nombre + " tiene " + miOtraVariable.Edad + " Años");
             //Console.Read();
 
+
+            ////MODIFICADORES DE ACCESO PUBLIC, PRIVATE - PROTECTED
+            Mamiferos mamifero = new Mamiferos("Anchelotti");
+           
+            Caballo caballo = new Caballo("Dott");
+            //caballo.Respirar(); 
+
         } // end Main()
 
-        //METODOS
+        ////METODOS O FUNCIONES
 
-        public static string NombreDelMes(int mes)
+        //public static string NombreDelMes(int mes)
+        //{
+        //    switch (mes)
+        //    {
+        //        case 1:
+        //            return "Enero";
+        //        case 2:
+        //            return "Febrero";
+        //        case 3:
+        //            return "Marzo";
+        //        case 4:
+        //            return "Abril";
+        //        case 5:
+        //            return "Mayo";
+        //        case 6:
+        //            return "Junio";
+        //        case 7:
+        //            return "Julio";
+        //        case 8:
+        //            return "Agosto";
+        //        case 9:
+        //            return "Septiembre";
+        //        case 10:
+        //            return "Octubre";
+        //        case 11:
+        //            return "Noviembre";
+        //        case 12:
+        //            return "Diciembre";
+        //        default:
+        //            throw new ArgumentOutOfRangeException();
+        //            //ArgumentOutOfRangeException -> rango superado, argumento de valores fuera del intervalo de valores valido
+        //            //return "No existe el mes para el parametro que digito";
+        //    }
+        //}
+
+        //static void MensajePantalla()
+        //{
+        //    Console.WriteLine("_______________METODOS_____________");
+        //    Console.WriteLine("Metodo MensajePantalla() { Esto es un mensaje desde el metodo MensajePantalla }");
+        //}
+
+        //static void SumaNumeros(int num1, int num2)
+        //{
+        //    int sum = num1 + num2;
+        //    Console.WriteLine("Metodo SumaNumeros() { La suma de los numeros por parametros es: " + sum + " }");
+        //}
+
+        //static int ReturnSumaNumeros(int num1, int num2)
+        //{
+        //    return num1 + num2;
+        //}
+
+        ////AMBITO
+        //int numero1 = 5; //ambito de clase
+        //int numero2 = 5; //ambito de clase
+
+        //void PrimerMetodo()
+        //{
+        //    int numero1 = 5; //ambito local
+        //    int numero2 = 7; //ambito local
+
+        //    Console.WriteLine(numero1 + numero2);
+        //}
+
+        //void SegundoMetodo()
+        //{
+        //    //Console.WriteLine(numero1); No es posible porque la variable numero1 no esta en el ambito de ser usada aqui   
+        //}
+
+        ////METODOS SOBRECARGA
+        ////mtd multiplica dos numeros int
+        //static int Multiplicacion(int operador1, int operador2)
+        //{
+        //    return operador1 * operador2;
+        //}
+
+        ////mtd que multiplica un int y un double
+        //static double Multiplicacion(int numero1, double numero2)
+        //{
+        //    return numero1 * numero2;
+        //}
+
+        ////mtd que multplica dos int y un doouble
+        //static double Multiplicacion(int numero1, double numero2, int numero3)
+        //{
+        //    return numero1 * numero2 * numero3;
+        //}
+
+        ////METODOS PARAMETROS OPCIONALES
+        ////double num3 toma el valor por defecto y sabe que es parametro opcional 
+        //private static double SumaParametroOpcional(int num1, double num2, double num3 = 0)
+        //{
+        //    return num1 + num2 + num3;
+        //}
+
+    }
+
+    //CLASES
+
+    class Mamiferos
+    {
+        //PROPIEDADES
+        private string nombreSerVivo;
+
+        public Mamiferos(string nombre)
         {
-            switch (mes)
-            {
-                case 1:
-                    return "Enero";
-                case 2:
-                    return "Febrero";
-                case 3:
-                    return "Marzo";
-                case 4:
-                    return "Abril";
-                case 5:
-                    return "Mayo";
-                case 6:
-                    return "Junio";
-                case 7:
-                    return "Julio";
-                case 8:
-                    return "Agosto";
-                case 9:
-                    return "Septiembre";
-                case 10:
-                    return "Octubre";
-                case 11:
-                    return "Noviembre";
-                case 12:
-                    return "Diciembre";
-                default:
-                    throw new ArgumentOutOfRangeException();
-                    //ArgumentOutOfRangeException -> rango superado, argumento de valores fuera del intervalo de valores valido
-                    //return "No existe el mes para el parametro que digito";
-            }
+            this.nombreSerVivo = nombre;
         }
 
-        static void MensajePantalla()
+        protected void Respirar()
         {
-            Console.WriteLine("_______________METODOS_____________");
-            Console.WriteLine("Metodo MensajePantalla() { Esto es un mensaje desde el metodo MensajePantalla }");
+            Console.WriteLine("Soy capaz de respirar");
         }
+    }
 
-        static void SumaNumeros(int num1,int num2)
+    class Caballo : Mamiferos
+    {
+        private string nombreCaballo;
+
+        public Caballo(String nombreCaballo) : base(nombreCaballo)
         {
-            int sum = num1 + num2;
-            Console.WriteLine("Metodo SumaNumeros() { La suma de los numeros por parametros es: "+sum+" }");
-        }
+            this.nombreCaballo = nombreCaballo;
 
-        static int ReturnSumaNumeros(int num1, int num2)
-        {
-            return num1 + num2; 
-        }
-
-        //AMBITO
-        int numero1 = 5; //ambito de clase
-        int numero2 = 5; //ambito de clase
-
-        void PrimerMetodo()
-        {
-            int numero1 = 5; //ambito local
-            int numero2 = 7; //ambito local
-
-            Console.WriteLine(numero1+numero2);
-        }
-
-        void SegundoMetodo()
-        {
-            //Console.WriteLine(numero1); No es posible porque la variable numero1 no esta en el ambito de ser usada aqui   
-        }
-
-        //SOBRECARGA
-        //mtd multiplica dos numeros int
-        static int Multiplicacion(int operador1, int operador2) 
-        {
-            return operador1 * operador2;
-        }
-
-        //mtd que multiplica un int y un double
-        static double Multiplicacion(int numero1, double numero2) 
-        {
-            return numero1 * numero2;
-        }
-
-        //mtd que multplica dos int y un doouble
-        static double Multiplicacion(int numero1, double numero2 , int numero3) 
-        {
-            return numero1 * numero2 * numero3;
-        }
-
-        //METODOS PARAMETROS OPCIONALES
-        //double num3 toma el valor por defecto y sabe que es parametro opcional 
-        private static double SumaParametroOpcional(int num1,double num2, double num3=0)
-        {
-            return num1 + num2 + num3;
+            Respirar();
         }
     }
 }
+
+
 
 //Existen Clases propias, Clases predefinidas de c#
 
