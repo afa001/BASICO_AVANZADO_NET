@@ -1,0 +1,7 @@
+C:\Users\PC\Source\Repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\AvisosVarios\bin\Debug\AvisosVarios.exe.config
+C:\Users\PC\Source\Repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\AvisosVarios\bin\Debug\AvisosVarios.exe
+C:\Users\PC\Source\Repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\AvisosVarios\bin\Debug\AvisosVarios.pdb
+C:\Users\PC\Source\Repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\AvisosVarios\obj\Debug\AvisosVarios.csprojAssemblyReference.cache
+C:\Users\PC\Source\Repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\AvisosVarios\obj\Debug\AvisosVarios.csproj.CoreCompileInputs.cache
+C:\Users\PC\Source\Repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\AvisosVarios\obj\Debug\AvisosVarios.exe
+C:\Users\PC\Source\Repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\AvisosVarios\obj\Debug\AvisosVarios.pdb
