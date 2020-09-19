@@ -396,10 +396,10 @@ namespace ConsoleApp1
         }
 
         public abstract void GetNombre(); //declarado, las clases que hereden de Animales en un futuro tendran que implementar este metodo
-        
+
     }
 
-    class Mamiferos:Animales
+    class Mamiferos : Animales
     {
         //PROPIEDADES
         private string nombreMamifero;
@@ -414,12 +414,22 @@ namespace ConsoleApp1
         {
             Console.WriteLine("El mamifero se llama:" + nombreMamifero);
         }
+
+        public virtual void Pensar()
+        {
+            Console.WriteLine("Tengo pensamientos");
+        }
+
+        public void CuidarCrias()
+        {
+            Console.WriteLine("Tambien cuido de mis crias");
+        }
     }
 
     class Largartija : Animales
     {
         private string nombreReptil;
-        
+
         public Largartija(string _nombreReptil)
         {
             this.nombreReptil = _nombreReptil;
@@ -443,19 +453,70 @@ namespace ConsoleApp1
         }
     }
 
-    class Ballena : Mamiferos 
+    class Ballena : Mamiferos
     {
-      private string nombreBallena;
-      public Ballena(String nombreBallena):base(nombreBallena)
-      {
+        private string nombreBallena;
+        public Ballena(String nombreBallena) : base(nombreBallena)
+        {
             this.nombreBallena = nombreBallena;
-      }  
+        }
 
-      public void Nadar()
-      {
+        public void Nadar()
+        {
             Console.WriteLine("Soy capaz de nadar");
-      }
+        }
     }
+
+    //METODOS SELLADOS
+    class Humano:Mamiferos
+    {
+        public Humano(string nombre):base(nombre)
+        {
+
+        }
+
+        public sealed override void Pensar()
+        {
+            Console.WriteLine("Mis pensamientos son de humano");
+        }
+    }
+
+    //METODOS SELLADOS
+    class Adolescente:Humano
+    {
+        public Adolescente(string nombre) : base(nombre)
+        {
+
+        }
+
+        //public override void Pensar()
+        //{
+        //    Console.WriteLine("Las hormonas me impiden pensar");
+        //}
+    }
+
+    //CLASES SELLADAS
+    sealed class Gorila : Mamiferos
+    {
+        public Gorila(string nombreGorila) : base(nombreGorila)
+        {
+
+        }
+
+        public void Trepar()
+        {
+            Console.WriteLine("Me gusta trepar los árboles");
+        }
+    }
+
+    //se comenta la clase Chimpance ya que al impedir la herencia en la clase Gorila, me arroja error
+    //class Chimpance:Gorila
+    //{
+    //    public Chimpance(string nombreChimpance):base(nombreChimpance)
+    //    {
+            
+    //    }
+    //}
 }
 
 //Existen Clases propias, Clases predefinidas de c#
