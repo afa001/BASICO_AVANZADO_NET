@@ -1,0 +1,7 @@
+C:\Users\PC\source\repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\StructEnum\bin\Debug\StructEnum.exe.config
+C:\Users\PC\source\repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\StructEnum\bin\Debug\StructEnum.exe
+C:\Users\PC\source\repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\StructEnum\bin\Debug\StructEnum.pdb
+C:\Users\PC\source\repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\StructEnum\obj\Debug\StructEnum.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\StructEnum\obj\Debug\StructEnum.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\StructEnum\obj\Debug\StructEnum.exe
+C:\Users\PC\source\repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\StructEnum\obj\Debug\StructEnum.pdb
