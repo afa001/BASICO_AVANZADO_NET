@@ -1,0 +1,7 @@
+C:\Users\PC\source\repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\PropeidaesAcceso\bin\Debug\PropeidaesAcceso.exe.config
+C:\Users\PC\source\repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\PropeidaesAcceso\bin\Debug\PropeidaesAcceso.exe
+C:\Users\PC\source\repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\PropeidaesAcceso\bin\Debug\PropeidaesAcceso.pdb
+C:\Users\PC\source\repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\PropeidaesAcceso\obj\Debug\PropeidaesAcceso.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\PropeidaesAcceso\obj\Debug\PropeidaesAcceso.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\PropeidaesAcceso\obj\Debug\PropeidaesAcceso.exe
+C:\Users\PC\source\repos\afa001\BASICO_AVANZADO_NET\basicoAvanzado(.NET FRAMEWORK)\PropeidaesAcceso\obj\Debug\PropeidaesAcceso.pdb
